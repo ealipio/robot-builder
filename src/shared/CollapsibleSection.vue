@@ -11,11 +11,11 @@
 
 <script>
 export default {
-  name:'CollapsibleSection',
-  data () {
-    return {open: true};
+  name: 'CollapsibleSection',
+  data() {
+    return { open: true };
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>

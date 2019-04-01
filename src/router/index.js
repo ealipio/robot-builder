@@ -9,19 +9,19 @@ Vue.use(Router);
 export default new Router({
   routes: [
     {
-      path:'/',
-      name:'Home',
+      path: '/',
+      name: 'Home',
       component: HomePage,
     },
     {
-      path:'/build',
-      name:'Build',
+      path: '/build',
+      name: 'Build',
       component: RobotBuilder,
     },
     {
-      path:'/parts',
-      name:'Parts',
+      path: '/parts/:partType/:id',
+      name: 'Parts',
       component: PartInfo,
     },
   ],
-})
+});
