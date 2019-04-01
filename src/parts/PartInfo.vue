@@ -12,7 +12,13 @@ import parts from '../data/parts';
 
 export default {
   name: 'PartInfo',
-  props: ['partType', 'id'],
+  props: {
+    partType: { type: String },
+    id: {
+      type: [Number, String],
+      validator: value => Number.isInteger(Number(value)),
+    },
+  },
   computed: {
     part() {
       const { partType, id } = this;
