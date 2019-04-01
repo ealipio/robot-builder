@@ -1,8 +1,8 @@
 # build-a-bot
-
+This project is just for fun, I'm following a course of vue.js 
 ## Project setup
 ```
-npm install
+npm i
 ```
 
 ### Compiles and hot-reloads for development
