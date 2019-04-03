@@ -100,7 +100,7 @@ export default {
       + robot.base.cost
       + robot.torso.cost;
 
-      this.cart.push(Object.assign({}, robot, { cost }));
+      this.$store.commit('addRobotToCart', Object.assign({}, robot, { cost }));
       this.addedtoCart = true;
     },
   },
