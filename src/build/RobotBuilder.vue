@@ -84,7 +84,8 @@ export default {
       + robot.base.cost
       + robot.torso.cost;
 
-      this.$store.commit('addRobotToCart', Object.assign({}, robot, { cost }));
+      this.$store.dispatch('addRobotToCart', Object.assign({}, robot, { cost }))
+        .then(() => this.$router.push('/cart'));
       this.addedtoCart = true;
     },
   },
