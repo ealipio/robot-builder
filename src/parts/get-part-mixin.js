@@ -11,7 +11,7 @@ export default {
         bases: [],
       };
 
-      return this.$store.state.parts || INITIAL_STATE;
+      return this.$store.state.robots.parts || INITIAL_STATE;
     },
   },
 };
