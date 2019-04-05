@@ -1,16 +1,21 @@
 # build-a-bot
 This project is just for fun, I'm following a course of vue.js 
+and includes frontend and client side.
 ## Project setup
 ```
 npm i
 ```
 
-### Compiles and hot-reloads for development
+### run client side
 ```
-npm run serve
+npm run start:client
+```
+### run server side
+```
+npm run start:server
 ```
 
-### Compiles and minifies for production
+### Compiles and minifies frontend for production
 ```
 npm run build
 ```
@@ -24,6 +29,3 @@ npm run test
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
