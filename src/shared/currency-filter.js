@@ -1,3 +1,3 @@
-export default function (amount) {
-  return `$ ${amount.toFixed(2)}`;
+export default function (amount = 0, symbol = '$') {
+  return `${symbol} ${amount.toFixed(2)}`;
 }
