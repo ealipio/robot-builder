@@ -4,7 +4,10 @@
   "private": true,
   "scripts": {
     "start:client": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build:client": "vue-cli-service build",
+    "build:client-production": "vue-cli-service build --mode=production",
+    "build:client-development": "vue-cli-service build --mode=development",
+    "build:client-staging": "vue-cli-service build --mode=staging",
     "lint": "vue-cli-service lint",
     "start:server": "node server.js"
   },

@@ -26,14 +26,12 @@ export default {
   actions: {
     getParts({ commit }) {
       axios.get('/api/parts')
-        .then(({ data }) => commit('updateParts', data))
-        .catch(console.error);
+        .then(({ data }) => commit('updateParts', data));
     },
     addRobotToCart({ commit, state }, robot) {
       const cart = [...state.cart, robot];
       return axios.post('/api/cart', cart)
-        .then(() => commit('addRobotToCart', robot))
-        .catch(console.error);
+        .then(() => commit('addRobotToCart', robot));
     },
   },
 };

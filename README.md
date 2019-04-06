@@ -1,9 +1,11 @@
 # build-a-bot
-This project is just for fun, I'm following a course of vue.js 
-and includes frontend and client side.
+I made this project just for fun, following a course of vue.js 
+
+> this includes frontend and backend side.
 ## Project setup
 ```
-npm i
+# after clone this project:
+npm install
 ```
 
 ### run client side
@@ -17,7 +19,7 @@ npm run start:server
 
 ### Compiles and minifies frontend for production
 ```
-npm run build
+npm run build:client
 ```
 
 ### Run your tests
