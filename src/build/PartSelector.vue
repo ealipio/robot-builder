@@ -10,11 +10,14 @@
     </router-link>
     <button @click="selectPreviousPart()" class="prev-selector"></button>
     <button @click="selectNextPart()" class="next-selector"></button>
-    <span class="sale" v-show="selectedPart.onSale">Sale!</span>
+    <span class="sale" v-pin
+    v-show="selectedPart.onSale">Sale!</span>
   </div>
 </template>
 
 <script>
+import pinDirective from '../shared/pin-directive';
+
 function getPreviousValidIndex(index, length) {
   const deprecatedIndex = index - 1;
   return deprecatedIndex < 0 ? length - 1 : deprecatedIndex;
@@ -25,6 +28,7 @@ function getNextValidIndex(index, length) {
 }
 
 export default {
+  directives: { pin: pinDirective },
   props: {
     parts: { type: Array, required: true },
     position: {
@@ -75,9 +79,6 @@ export default {
   border: 3px solid #aaa;
 }
 .sale {
-  position: absolute;
-  bottom: 5px;
-  right: 5px;
   color: white;
   background-color: red;
   padding: 3px;
