@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    Root Foo: {{rootFoo}} <br />
+    <!-- Root Foo: {{rootFoo}} <br />
     Robots Foo: {{robotFoo}} <br />
     Users Foo: {{usersFoo}} <br />
     <hr>
     Root Getter Foo: {{rootGetterFoo}} <br />
-    Robots Getter Foo: {{roboGettertFoo}} <br />
+    Robots Getter Foo: {{roboGettertFoo}} <br /> -->
     <header>
       <nav>
         <ul>
